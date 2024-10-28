@@ -28,6 +28,7 @@ def createGuestAccounts(numAccounts,addToSudoer=False):
     subprocess.run(["useradd","-s","/bin/bash","-m","-p",
       guest_account_passphrase_enc,username])
     if addToSudoer:
+      print("    adding "+username+" to sudo group")
       subprocess.run(["usermod","-aG","sudo",username])
 
 def deletGuestAccounts(numAccounts):
@@ -67,7 +68,7 @@ def main():
   if args.delete:
     deletGuestAccounts(args.numGuestAccounts)
   else:
-    createGuestAccounts(args.numGuestAccounts,addToSudoer)
+    createGuestAccounts(args.numGuestAccounts,addToSudoer=addToSudoer)
 
 if __name__=="__main__":
   main()
