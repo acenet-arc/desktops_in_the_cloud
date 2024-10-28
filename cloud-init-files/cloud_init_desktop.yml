@@ -1,0 +1,15 @@
+#cloud-config
+package_update: true
+package_upgrade: true
+packages:
+  - fail2ban
+users:
+  - name: <admin-user>
+    shell: /bin/bash
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    ssh_authorized_keys:
+      - <admin-user-ssh-public-key>
+runcmd:
+  - ["wget","https://raw.githubusercontent.com/acenet-arc/desktops_in_the_cloud/refs/heads/main/cloud-init-files/passphrase_generator.py"]
+  - ["wget","https://raw.githubusercontent.com/acenet-arc/desktops_in_the_cloud/refs/heads/main/cloud-init-files/setup_jekyll_and_guest_accounts.py"]
+  - ["python3","./setup_jekyll_and_guest_accounts.py","1"]

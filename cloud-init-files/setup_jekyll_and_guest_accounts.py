@@ -67,7 +67,7 @@ def main():
   parser.add_argument('--delete', action='store_true',default=False,help="Delete accounts rather than create them [account creation is default action]")
   args = parser.parse_args()
 
-  installJekyll()
+  #installJekyll()
   enablePasswordSSHAuthentication()
   if args.delete:
     deletGuestAccounts(args.numGuestAccounts)
