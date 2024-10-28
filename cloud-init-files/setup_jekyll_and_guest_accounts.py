@@ -36,7 +36,7 @@ def createGuestAccounts(numAccounts):
     subprocess.run(["useradd","-s","/bin/bash","-m","-p",
       guest_account_passphrase_enc,username])
 
-    createUserWebDirectory(username)
+    #createUserWebDirectory(username)
 def deletGuestAccounts(numAccounts):
 
   print("deleting guest accounts")
@@ -52,8 +52,12 @@ def enablePasswordSSHAuthentication():
 
   print("***WARNING: SHOULD HAVE FAIL2BAN RUNNING NOW***")
   print("enabling ssh password authentication")
+  replaceStrInFile("#PasswordAuthentication yes","PasswordAuthentication yes",
+    "/etc/ssh/sshd_config")
   replaceStrInFile("PasswordAuthentication no","PasswordAuthentication yes",
     "/etc/ssh/sshd_config")
+  replaceStrInFile("PasswordAuthentication no","PasswordAuthentication yes",
+    "/etc/ssh/sshd_config.d/60-cloudimg-settings.conf")
   subprocess.run(["service","ssh","restart"])
 def installJekyll():
 
