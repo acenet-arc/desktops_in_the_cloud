@@ -26,7 +26,7 @@ GitHub page and find the highest version that is not 'Beta':
 
 You will find a link to SourceForge for downloading that version for various
 platforms (e.g., for Windows, the version should look similar to
-`vncviewer64-1.11.0.exe`).
+`vncviewer64-1.14.1.exe`).
 
 Install from the downloaded file.
 
@@ -39,7 +39,7 @@ GitHub page and find the highest version that is not 'Beta':
 
 You will find a link to SourceForge for downloading that version for various
 platforms (e.g., for Mac, the version should look similar to
-`TigerVNC-1.11.0.dmg`).
+`TigerVNC-1.14.1.dmg`).
 
 Install from the downloaded file.
 

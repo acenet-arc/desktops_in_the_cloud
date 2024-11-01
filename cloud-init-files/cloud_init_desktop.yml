@@ -11,5 +11,5 @@ users:
       - <admin-user-ssh-public-key>
 runcmd:
   - ["wget","https://raw.githubusercontent.com/acenet-arc/desktops_in_the_cloud/refs/heads/main/cloud-init-files/passphrase_generator.py"]
-  - ["wget","https://raw.githubusercontent.com/acenet-arc/desktops_in_the_cloud/refs/heads/main/cloud-init-files/setup_passwordssh.py.py"]
-  - ["python3","./setup_passwordssh.py.py","1"]
+  - ["wget","https://raw.githubusercontent.com/acenet-arc/desktops_in_the_cloud/refs/heads/main/cloud-init-files/setup_passwordssh.py"]
+  - ["python3","./setup_passwordssh.py","1"]

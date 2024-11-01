@@ -37,7 +37,7 @@ The below image shows an illustration of this:
 
 In the image, a laptop operating system shows a blue desktop. On that desktop are a few windows. One of those windows is a remote desktop client. That window shows the desktop of another computer, in this case a desktop on a cloud VM.
 
-Within this remote desktop window (when it is in focus), one can type in the window and use the mouse to driving the user interface of the other computer.
+Within this remote desktop window (when it is in focus), one can type in the window and use the mouse to drive the user interface of the other computer.
 
 Note that the cloud VM doesn't really have a display/monitor hooked up to it, so the desktop we are seeing is a virtual one -- the "display" it is "on" exists only in software.
 
