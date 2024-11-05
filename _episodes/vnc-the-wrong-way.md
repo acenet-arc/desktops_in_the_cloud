@@ -59,14 +59,23 @@ remotely. A hashed version of the password is stored in the file `~/.vnc/passwd`
 
 When asked about adding a "view-only password", press `n` (no).
 
-Now, point your VNC Viewer program on your computer to your VNC server on display `:1`. You'll need your VM's floating IP address (e.g, `206.167.180.170`). E.g., tell your VNC viewer to attach to the server at `206.167.180.170:1`. For example, on Linux you can run:
+Now, point your VNC Viewer program on your computer to your VNC server on display `:1`. You'll need your VM's floating IP address (e.g, `206.167.180.170`). E.g., tell your VNC viewer to attach to the server at `206.167.180.170:1`.
+
+For example, on **Linux** you can run:
 
 ~~~
 $ vncviewer <ip-of-your-VM>:1
 ~~~
 {: .bash}
 
+On **Windows** or **Mac** start your Tiger VNC program. You should see a Window that looks something like this:
+
+![](../fig/vnc_viewer_windows.png)
+
+In the **VNC server** text box add `<ip-of-your-VM>:1` then click "Connect".
+
 Your VNC program may have separate options for host, display, or port.
+
 
 > ## Question
 >

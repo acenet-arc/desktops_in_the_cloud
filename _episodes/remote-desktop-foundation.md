@@ -96,7 +96,10 @@ Note: `apt-cache` is the "old way" of searching for packages in Ubuntu. The new 
 
 The server package that we will install is `tigervnc-standalone-server`. We will also grab the `tigervnc-common` package.
 
-```sudo apt install -y tigervnc-common tigervnc-standalone-server```
+~~~
+$ sudo apt install -y tigervnc-common tigervnc-standalone-server
+~~~
+{: .bash}
 
 The TigerVNC server appears to handle many software packages (even ones that do 3D rendering).
 

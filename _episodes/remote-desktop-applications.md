@@ -31,12 +31,10 @@ or
 
 The default terminal that is launched is `xterm`. It is fairly low on features, but will do the trick. (An example of a terminal with a more full feature set is `gnome-terminal`. It depends on a lot of packages though, since it is part of the Gnome desktop environment).
 
-Try right-clicking on a terminal window to get a window to increase the size of the font.
-
 You can use a terminal to start another terminal with a very specific font:
 
 ~~~
-xterm -fa 'Monospace' -fs 14 &
+xterm -fa 'Monospace' -fs 16 &
 ~~~
 {: .bash}
 
